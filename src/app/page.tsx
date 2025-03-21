@@ -40,13 +40,13 @@ git clone https://github.com/Mina-Massoud/mina-scheduler
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
-      <nav className="container mx-auto py-4 flex justify-between items-center">
+    <main className="min-h-screen relative flex flex-col">
+      <nav className="container px-4 mx-auto py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-primary">Mina Scheduler</div>
         <div className="flex gap-4">
           <Button variant="ghost" size="sm" asChild>
             <Link
-              href="https://github.com/yourusername/mina-scheduler"
+              href="https://github.com/Mina-Massoud/mina-scheduler"
               target="_blank"
             >
               <Github className="mr-2 h-4 w-4" />
@@ -64,7 +64,46 @@ git clone https://github.com/Mina-Massoud/mina-scheduler
         </div>
       </nav>
 
-      <section className="flex-1 container mx-auto flex flex-col items-center justify-center px-4 py-12 md:py-24 text-center">
+      <svg
+          width="400"
+          height="400"
+          className="absolute lg:block hidden top-20 left-0"
+          viewBox="0 0 200 200"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {" "}
+          <g clip-path="url(#clip0_104_26)">
+            {" "}
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
+              fill="url(#paint0_linear_104_26)"
+            />{" "}
+          </g>{" "}
+          <defs>
+            {" "}
+            <linearGradient
+              id="paint0_linear_104_26"
+              x1="20.5"
+              y1="16"
+              x2="100"
+              y2="200"
+              gradientUnits="userSpaceOnUse"
+            >
+              {" "}
+              <stop stop-color="#ACAAFF" />{" "}
+              <stop offset="1" stop-color="#C0E8FF" />{" "}
+            </linearGradient>{" "}
+            <clipPath id="clip0_104_26">
+              {" "}
+              <rect width="200" height="200" fill="white" />{" "}
+            </clipPath>{" "}
+          </defs>{" "}
+        </svg>
+
+      <section className="flex-1 relative z-10 container mx-auto flex flex-col items-center justify-center px-4 py-12 md:py-24 text-center">
         <motion.h1
           className="text-4xl md:text-6xl font-bold tracking-tight mb-4"
           initial={{ opacity: 0, y: 20 }}
@@ -142,44 +181,7 @@ git clone https://github.com/Mina-Massoud/mina-scheduler
           </Button>
         </motion.div>
 
-        <svg
-          width="400"
-          height="400"
-          className="absolute top-20 left-0"
-          viewBox="0 0 200 200"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {" "}
-          <g clip-path="url(#clip0_104_26)">
-            {" "}
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M107.143 0H92.8571V82.7556L34.3401 24.2385L24.2386 34.3401L82.7556 92.8571H0V107.143H82.7555L24.2386 165.66L34.3401 175.761L92.8571 117.244V200H107.143V117.244L165.66 175.761L175.761 165.66L117.244 107.143H200V92.8571H117.244L175.761 34.34L165.66 24.2385L107.143 82.7555V0Z"
-              fill="url(#paint0_linear_104_26)"
-            />{" "}
-          </g>{" "}
-          <defs>
-            {" "}
-            <linearGradient
-              id="paint0_linear_104_26"
-              x1="20.5"
-              y1="16"
-              x2="100"
-              y2="200"
-              gradientUnits="userSpaceOnUse"
-            >
-              {" "}
-              <stop stop-color="#ACAAFF" />{" "}
-              <stop offset="1" stop-color="#C0E8FF" />{" "}
-            </linearGradient>{" "}
-            <clipPath id="clip0_104_26">
-              {" "}
-              <rect width="200" height="200" fill="white" />{" "}
-            </clipPath>{" "}
-          </defs>{" "}
-        </svg>
+  
         <AnimatePresence>
           {showCode && (
             <motion.div
