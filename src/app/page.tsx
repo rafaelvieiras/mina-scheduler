@@ -25,7 +25,7 @@ export default function Home() {
   const installCode = `# First, install shadcn UI in your project:
 npx shadcn-ui@latest init
 
-# Then clone the Mina Calendar repository:
+# Then clone the Mina Scheduler repository:
 git clone https://github.com/Mina-Massoud/mina-scheduler
 
 # Copy these folders to your project:
@@ -42,7 +42,7 @@ git clone https://github.com/Mina-Massoud/mina-scheduler
   return (
     <main className="min-h-screen flex flex-col">
       <nav className="container mx-auto py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-primary">Mina Calendar</div>
+        <div className="text-2xl font-bold text-primary">Mina Scheduler</div>
         <div className="flex gap-4">
           <Button variant="ghost" size="sm" asChild>
             <Link
@@ -246,7 +246,7 @@ export default function MyCalendar() {
                     target="_blank"
                     className="text-primary underline"
                   >
-                    Mina Calendar repository
+                    Mina Scheduler repository
                   </a>
                 </li>
                 <li>
@@ -317,7 +317,7 @@ export default function MyCalendar() {
               transition={{ type: "spring", damping: 15 }}
             >
               <div className="flex justify-between items-center p-4 border-b">
-                <h2 className="text-2xl font-bold">Mina Calendar Demo</h2>
+                <h2 className="text-2xl font-bold">Mina Scheduler Demo</h2>
                 <Button
                   variant="ghost"
                   size="sm"
@@ -352,7 +352,7 @@ export default function MyCalendar() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-muted-foreground">
-                © {new Date().getFullYear()} Mina Calendar. Open source under
+                © {new Date().getFullYear()} Mina Scheduler. Open source under
                 MIT License.
               </p>
             </div>
