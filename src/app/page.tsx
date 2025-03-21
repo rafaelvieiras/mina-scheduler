@@ -42,7 +42,7 @@ git clone https://github.com/Mina-Massoud/mina-scheduler
   return (
     <main className="min-h-screen relative flex flex-col">
       <nav className="container px-4 mx-auto py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-primary">Mina Scheduler</div>
+        <div className="md:text-2xl font-bold text-primary ">Mina Scheduler</div>
         <div className="flex gap-4">
           <Button variant="ghost" size="sm" asChild>
             <Link
