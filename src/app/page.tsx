@@ -312,7 +312,7 @@ export default function MyCalendar() {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-card border rounded-lg w-full max-w-[1500px] max-h-[70vh] overflow-auto"
+              className="bg-card border rounded-lg w-full max-w-[1500px] max-h-[95vh] overflow-auto"
               initial={{ scale: 1.2, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
