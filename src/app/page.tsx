@@ -156,7 +156,7 @@ git clone https://github.com/Mina-Massoud/mina-scheduler
               valid event data.
             </li>
             <li>
-              <strong>Next UI Integration:</strong> Leverages Next UI for a
+              <strong>Shadcn UI Integration:</strong> Leverages Shadcn UI for a
               seamless user interface.
             </li>
           </ul>
